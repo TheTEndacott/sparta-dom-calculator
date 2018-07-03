@@ -1,5 +1,6 @@
 console.log("rotaluclaC MOD");
 
+// Set global variables
 var num1 = 0;
 var num2 = false;
 var add = false;
@@ -19,7 +20,7 @@ var numButton1 = document.getElementsByClassName("buttonNum")[6];
 var numButton2 = document.getElementsByClassName("buttonNum")[7];
 var numButton3 = document.getElementsByClassName("buttonNum")[8];
 
-// Get response in console. Get input onto 'screen'.
+// Get response in console to test. Get input onto 'screen'. Set global variable.
 numButton7.addEventListener("click", function(event){
   event.stopPropagation();
   document.getElementById("screen").innerHTML = "7";
@@ -95,7 +96,7 @@ numButton3.addEventListener("click", function(event){
     num2 = 3;
   }});
 
-// Target class operator into array
+// Target operator buttons and set their global variables.
 var multiplyButton = document.getElementsByClassName("operator")[0];
 var divideButton = document.getElementsByClassName("operator")[1];
 var subButton = document.getElementsByClassName("operator")[2];
@@ -119,6 +120,8 @@ addButton.addEventListener("click", function(event){
   document.getElementById("screen").innerHTML = "+";
   add = true;
 });
+
+// Clear button doing some spring cleaning
 clrButton.addEventListener("click", function(event){
   document.getElementById("screen").innerHTML = "Do math";
 });
